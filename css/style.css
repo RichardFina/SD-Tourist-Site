@@ -1,19 +1,74 @@
-@import "import-styles.css";
-
+/* Type Selectors */
 body {
-    text-align: center;
-
+    color: #878787;
+    margin: 0;
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 5.625rem; /* 90px/16px */
     color: white;
 }
 
-header {
+h2 {
+    font-size: 53px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #48525c;
+}
+
+/* ID Selectors */
+
+#main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: solid 10px orange;
+}
+
+/* Class Selectors */
+
+.primary-content {
+    text-align: center;
+}
+
+.t-border {
+    border-top: 2px solid lightgrey;
+}
+
+.main-header {
     background-color: orange;
 }
 
-p {
-    font-size: 20px;
+.title {
+    color: white;
+    font-size: 1.625rem;     /* 26px/16px */
+}
+
+.primary-content, 
+.secondary-content {
+    width: 60%;
+}
+
+/* Psuedo-classes */
+
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: lightblue;
+}
+
+a:hover {
+    color: forestgreen;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+:focus {
+    color: white;
+    background-color: orange;
 }
